@@ -9,32 +9,11 @@ biblio-style: apalike
 
 We can use this space to go ahead and write out any exercise or prework that you would like have done prior to coming.
 
-## Session 1
+##Tidying Data
+My first step is to wrangle the data and make it Tidy.
 
-This plot is generated using ggplot2 [@ggplot2].
-
-```{r}
-library(ggplot2)
-ggplot(iris, aes(Species, Sepal.Length))+
-  geom_col()
-
-```
-
-
-## Session 2
-
-## Session 3
-
-## Session 4
-
-## Session 5
-
-## Session 6
-
-## Session 7
-
-## Session 8
 
 ----
 
 ## References
+Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.".
