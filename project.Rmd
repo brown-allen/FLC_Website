@@ -1,5 +1,5 @@
 ---
-title: "Project"
+title: "Student Surveys for Online Courses"
 bibliography: library.bib
 biblio-style: apalike
 ---
@@ -8,6 +8,11 @@ biblio-style: apalike
 ```
 
 # Abstract
+I would like to develop a project that can take new survey data each term (either directly from Qualtrics via an API or from downloaded .csv files) and quickly create a report. Portions of this project would include
+1. A process to import and clean the data each term.
+2. One or more standard visualizations of Likert-type item data.
+3. Organization and/or parsing of open-ended text responses.
+4. Report Template
 
 # Introduction
 

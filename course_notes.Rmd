@@ -11,11 +11,17 @@ You can detail what you learned in the session within these pages. You can also 
 
 # Session 1
 
+
 # Session 2
+
+
 
 # Session 3
 
+
+
 # Session 4
+
 
 ##Pseudocode into Code
 Following session three, I spent time writing out the steps I might need to create one "Tidy" data frame that includes survey responses from each course. That looked like this:
@@ -33,7 +39,7 @@ I then worked to write simplistic code to accomplish this task, which looked som
 > all_likert <- all_data[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)]
 > all_likert <- gather(all_likert, key = "Question", value = "Response", -ResponseId)
 
-
+I then worked to identify strategies to streamline this process. For the next session, I am hoping to make progress on writing 1 or more functions to expedite the data import process. Additionally, I am hoping to begin some preliminary visualization work.
 # Session 5
 
 # Session 6
