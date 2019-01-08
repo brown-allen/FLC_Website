@@ -12,6 +12,9 @@ navbar:
   - text: "Project"
     icon: fa-folder
     href: project.html
+  - text: "Learning Analytics"
+    icon: fa-balance-scale
+    href: LA_Friend_or_Foe.html
 output:
   html_document:
     theme: journal

@@ -1,5 +1,5 @@
 ---
-title: "LA_Friend_or_Foe"
+title: "Learning Analytics - Friend or Foe"
 author: "A. Brown"
 date: "1/8/2019"
 output: html_document
@@ -10,6 +10,29 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Learning Analytics: Friend or Foe
-Lorem Ipsum
+Schools, universities, and 3rd-party vendors are aggregating ever-increasing sets of student data. We will discuss whether a value-sensitive design process is capable of centering equity, security, and justice in schools’ learning analytics efforts. Might an institutional data review board, modeled in part after IRBs, be useful in ensuring ethical practice?
 
-##References
+### Conversation Topic
+> “We need to see data protection not as a mere legal requirement, but should embed the care about privacy deeply into Learning Analytics tools and increase the trust of data subjects in these systems. Privacy should not be seen as a burden but rather as a valuable service we can offer to build trusting relations with our stakeholders” (Drachsler & Greller, 2016).
+
+We will discuss whether a value sensitive design process is capable of centering equity, security, and justice in schools’ learning analytics efforts and if the establishment of an institutional data review board, modeled in part after IRBs, might be useful in ensuring ethical practices around data. Special attention will be paid to the risks vs. value presented by learning analytics efforts, and existing standards already in use at some institutions.
+
+### Session Objectives
+1. Adapt one or more strategies for encouraging ethical data practices to their own institutional context.
+2. Articulate one or more reasons for centering equity, security, and justice in learning analytics efforts.
+3. Identify colleagues both inside and outside of their institution who might serve as collaborators in developing ethical data policies and practices.
+
+### Guiding Questions
+*What kind of data do our institutions collect on students? Do we need to be collecting this data? Should we be collecting this data?
+*What are the ethical and legal obligations institutions have regarding student data? Does one extend beyond the other?
+*Do our institutions have policies and processes that adequately address both the ethical and legal considerations regarding student data? What do these policies and processes look like?
+*What is the worst thing that could happen with the student data our institutions have? Do our policies and processes adequately prevent and/or mitigate the fallout from this type of breach?
+*Are equity, security, and justice centered in institutional policies and practices around student data? How might they be?
+*What is a value-centered design process and how might it inform policy and practice around data collection and security?
+*Might some sort of “Institutional Data Review Board,” modeled after IRBs, positively inform this process? What might these IDRBs look like?
+
+###References
+*Drachsler, Hendrik, and Wolfgang Greller. "Privacy and analytics: it's a DELICATE issue a checklist for trusted learning analytics." In Proceedings of the sixth international conference on learning analytics & knowledge, pp. 89-98. ACM, 2016.
+*Friedman, Batya, Peter Kahn, and Alan Borning. "Value sensitive design: Theory and methods." University of Washington technical report (2002): 02-12.
+*Tsai, Yi-Shan, Pedro Manuel Moreno-Marcos, Kairit Tammets, Kaire Kollom, and Dragan Gašević. "SHEILA policy framework: informing institutional strategies and policy processes of learning analytics." In Proceedings of the 8th International Conference on Learning Analytics and Knowledge, pp. 320-329. ACM, 2018.
+*World Medical Association. "World Medical Association Declaration of Helsinki: ethical principles for medical research involving human subjects." Jama 310, no. 20 (2013): 2191.
