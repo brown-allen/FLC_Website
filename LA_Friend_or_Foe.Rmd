@@ -23,16 +23,16 @@ We will discuss whether a value sensitive design process is capable of centering
 3. Identify colleagues both inside and outside of their institution who might serve as collaborators in developing ethical data policies and practices.
 
 ### Guiding Questions
-*What kind of data do our institutions collect on students? Do we need to be collecting this data? Should we be collecting this data?
-*What are the ethical and legal obligations institutions have regarding student data? Does one extend beyond the other?
-*Do our institutions have policies and processes that adequately address both the ethical and legal considerations regarding student data? What do these policies and processes look like?
-*What is the worst thing that could happen with the student data our institutions have? Do our policies and processes adequately prevent and/or mitigate the fallout from this type of breach?
-*Are equity, security, and justice centered in institutional policies and practices around student data? How might they be?
-*What is a value-centered design process and how might it inform policy and practice around data collection and security?
-*Might some sort of “Institutional Data Review Board,” modeled after IRBs, positively inform this process? What might these IDRBs look like?
+* What kind of data do our institutions collect on students? Do we need to be collecting this data? Should we be collecting this data?
+* What are the ethical and legal obligations institutions have regarding student data? Does one extend beyond the other?
+* Do our institutions have policies and processes that adequately address both the ethical and legal considerations regarding student data? What do these policies and processes look like?
+* What is the worst thing that could happen with the student data our institutions have? Do our policies and processes adequately prevent and/or mitigate the fallout from this type of breach?
+* Are equity, security, and justice centered in institutional policies and practices around student data? How might they be?
+* What is a value-centered design process and how might it inform policy and practice around data collection and security?
+* Might some sort of “Institutional Data Review Board,” modeled after IRBs, positively inform this process? What might these IDRBs look like?
 
 ###References
-*Drachsler, Hendrik, and Wolfgang Greller. "Privacy and analytics: it's a DELICATE issue a checklist for trusted learning analytics." In Proceedings of the sixth international conference on learning analytics & knowledge, pp. 89-98. ACM, 2016.
-*Friedman, Batya, Peter Kahn, and Alan Borning. "Value sensitive design: Theory and methods." University of Washington technical report (2002): 02-12.
-*Tsai, Yi-Shan, Pedro Manuel Moreno-Marcos, Kairit Tammets, Kaire Kollom, and Dragan Gašević. "SHEILA policy framework: informing institutional strategies and policy processes of learning analytics." In Proceedings of the 8th International Conference on Learning Analytics and Knowledge, pp. 320-329. ACM, 2018.
-*World Medical Association. "World Medical Association Declaration of Helsinki: ethical principles for medical research involving human subjects." Jama 310, no. 20 (2013): 2191.
+* Drachsler, Hendrik, and Wolfgang Greller. "Privacy and analytics: it's a DELICATE issue a checklist for trusted learning analytics." In Proceedings of the sixth international conference on learning analytics & knowledge, pp. 89-98. ACM, 2016.
+* Friedman, Batya, Peter Kahn, and Alan Borning. "Value sensitive design: Theory and methods." University of Washington technical report (2002): 02-12.
+* Tsai, Yi-Shan, Pedro Manuel Moreno-Marcos, Kairit Tammets, Kaire Kollom, and Dragan Gašević. "SHEILA policy framework: informing institutional strategies and policy processes of learning analytics." In Proceedings of the 8th International Conference on Learning Analytics and Knowledge, pp. 320-329. ACM, 2018.
+* World Medical Association. "World Medical Association Declaration of Helsinki: ethical principles for medical research involving human subjects." Jama 310, no. 20 (2013): 2191.
