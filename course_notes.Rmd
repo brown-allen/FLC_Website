@@ -27,9 +27,7 @@ Following session three, I spent time writing out the steps I might need to crea
 I then worked to write simplistic code to accomplish this task, which looked something like this:
 ```{r, simple code}
 read_csv(“data/file_name1.csv”)
-...
 file_name1_no_hd <- file_name1[-c(1,2), ]
-...
 all_data <- rbind(file_name1_no_hd, file_name2_no_hd,...)
 all_likert <- all_data[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)]
 all_likert <- gather(all_likert, key = "Question", value = "Response", -ResponseId)
