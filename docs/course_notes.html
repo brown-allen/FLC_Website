@@ -341,6 +341,14 @@ div.tocify {
 </div>
 <div id="session-4" class="section level1">
 <h1>Session 4</h1>
+<div id="pseudocode-into-code" class="section level2">
+<h2>Pseudocode into Code</h2>
+<p>Following session three, I spent time writing out the steps I might need to create one “Tidy” data frame that includes survey responses from each course. That looked like this: 1. Read in various .csv files (all placed in common data folder) 2. Remove metadata headers…first two columns (repeat for each file) 3. Combine into one data frame 4. Isolate Likert-type items 5. Tidy data - gather into a longer table such that each response is its own entry</p>
+<p>I then worked to write simplistic code to accomplish this task, which looked something like this:</p>
+<blockquote>
+<p>read_csv(“data/file_name1.csv”) file_name1_no_hd &lt;- file_name1[-c(1,2), ] all_data &lt;- rbind(file_name1_no_hd, file_name2_no_hd,…) all_likert &lt;- all_data[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)] all_likert &lt;- gather(all_likert, key = “Question”, value = “Response”, -ResponseId)</p>
+</blockquote>
+</div>
 </div>
 <div id="session-5" class="section level1">
 <h1>Session 5</h1>
