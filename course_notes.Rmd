@@ -25,7 +25,7 @@ Following session three, I spent time writing out the steps I might need to crea
 5. Tidy data - gather into a longer table such that each response is its own entry
 
 I then worked to write simplistic code to accomplish this task, which looked something like this:
-```{r}
+```{r, simple code}
 read_csv(“data/file_name1.csv”)
 ...
 file_name1_no_hd <- file_name1[-c(1,2), ]
