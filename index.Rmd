@@ -7,9 +7,13 @@ title: "Data Analysis in R: Research & Learning"
 
 ## Project Overview
 
-I am interested in automating the visualization and analysis process for the Online Summer Course Surveys.
+I am interested in automating the visualization and analysis process for the Online Summer Course Surveys. I would like to develop a project that can take new survey data each term (either directly from Qualtrics via an API or from downloaded .csv files) and quickly create a report. Portions of this project would include
+1. A process to import and clean the data each term.
+2. One or more standard visualizations of Likert-type item data.
+3. Organization and/or parsing of open-ended text responses.
+4. Report Template
 
-## General Structure
+## General Site Structure
 
 We have provided a rough template for your website
 - **course_notes.Rmd** - Write your notes for the class, try some code, work some exercises and use this as a virtual notepad for the items we review. This is a great way to showcase new skills and serve as a reference when you can't quite remember how you did something

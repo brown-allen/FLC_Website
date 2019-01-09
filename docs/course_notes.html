@@ -353,19 +353,7 @@ div.tocify {
 </ol>
 <p>I then worked to write simplistic code to accomplish this task, which looked something like this:</p>
 <blockquote>
-<p>read_csv(“data/file_name1.csv”)</p>
-</blockquote>
-<blockquote>
-<p>file_name1_no_hd &lt;- file_name1[-c(1,2), ]</p>
-</blockquote>
-<blockquote>
-<p>all_data &lt;- rbind(file_name1_no_hd, file_name2_no_hd,…)</p>
-</blockquote>
-<blockquote>
-<p>all_likert &lt;- all_data[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)]</p>
-</blockquote>
-<blockquote>
-<p>all_likert &lt;- gather(all_likert, key = “Question”, value = “Response”, -ResponseId)</p>
+<p>read_csv(“data/file_name1.csv”) file_name1_no_hd &lt;- file_name1[-c(1,2), ] all_data &lt;- rbind(file_name1_no_hd, file_name2_no_hd,…) all_likert &lt;- all_data[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)] all_likert &lt;- gather(all_likert, key = “Question”, value = “Response”, -ResponseId)</p>
 </blockquote>
 <p>I then worked to identify strategies to streamline this process. For the next session, I am hoping to make progress on writing 1 or more functions to expedite the data import process. Additionally, I am hoping to begin some preliminary visualization work. # Session 5</p>
 </div>
