@@ -19,15 +19,14 @@ You can detail what you learned in the session within these pages. You can also 
 
 
 # Session 4
-
+Following session three, I spent time writing out the steps I might need to create one "Tidy" data frame that includes survey responses from each course. That looked like this:
 
 ##Pseudocode into Code
-Following session three, I spent time writing out the steps I might need to create one "Tidy" data frame that includes survey responses from each course. That looked like this:
- 1. Read in various .csv files (all placed in common data folder)
- 2. Remove metadata headers...first two columns (repeat for each file)
- 3. Combine into one data frame
- 4. Isolate Likert-type items
- 5. Tidy data - gather into a longer table such that each response is its own entry
+1. Read in various .csv files (all placed in common data folder)
+2. Remove metadata headers...first two columns (repeat for each file)
+3. Combine into one data frame
+4. Isolate Likert-type items
+5. Tidy data - gather into a longer table such that each response is its own entry
 
 I then worked to write simplistic code to accomplish this task, which looked something like this:
 
