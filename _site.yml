@@ -9,7 +9,7 @@ navbar:
   - text: "Pre-Work"
     icon: fa-paper-plane
     href: pre_work.html
-  - text: "Project"
+  - text: "Surveys"
     icon: fa-folder
     href: project.html
   - text: "Learning Analytics"
