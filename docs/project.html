@@ -343,6 +343,17 @@ div.tocify {
 <h1>Methodology</h1>
 <div id="data" class="section level2">
 <h2>Data</h2>
+<p>Loading Packages</p>
+<pre class="r"><code>library(tidyverse)
+library(readr)</code></pre>
+<p>Using Dummy Data</p>
+<pre class="r"><code>AAA_111 &lt;- read_csv(&quot;survey_project/data/AAA_111_Survey_Responses.csv&quot;)
+AAA_112 &lt;- read_csv(&quot;survey_project/data/AAA_112_Survey_Responses.csv&quot;)
+AAA_111_no_hd &lt;- AAA_111[-c(1,2), ]
+AAA_112_no_hd &lt;- AAA_112[-c(1,2), ]
+all_surveys &lt;- rbind(AAA_111_no_hd,AAA_112_no_hd)
+all_likert &lt;- all_surveys[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)]
+all_likert &lt;- gather(all_likert, key = &quot;Question&quot;, value = &quot;Response&quot;, -ResponseId)</code></pre>
 </div>
 <div id="analysis" class="section level2">
 <h2>Analysis</h2>

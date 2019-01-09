@@ -1,5 +1,5 @@
 ---
-title: "Learning Analytics - Friend or Foe"
+title: "Conference Proposal - Roundtable Discussion"
 ##author: "A. Brown"
 ##date: "1/8/2019"
 output: html_document
@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+Accepted for OLC Innovate 2019
 
 ## Learning Analytics: Friend or Foe
 Schools, universities, and 3rd-party vendors are aggregating ever-increasing sets of student data. We will discuss whether a value-sensitive design process is capable of centering equity, security, and justice in schools’ learning analytics efforts. Might an institutional data review board, modeled in part after IRBs, be useful in ensuring ethical practice?
