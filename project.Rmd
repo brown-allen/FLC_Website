@@ -21,6 +21,21 @@ I would like to develop a project that can take new survey data each term (eithe
 # Methodology
 
 ## Data
+Loading Packages
+```{r}
+library(tidyverse)
+library(readr)
+```
+Using Dummy Data
+```{r}
+AAA_111 <- read_csv("survey_project/data/AAA_111_Survey_Responses.csv")
+AAA_112 <- read_csv("survey_project/data/AAA_112_Survey_Responses.csv")
+AAA_111_no_hd <- AAA_111[-c(1,2), ]
+AAA_112_no_hd <- AAA_112[-c(1,2), ]
+all_surveys <- rbind(AAA_111_no_hd,AAA_112_no_hd)
+all_likert <- all_surveys[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)]
+all_likert <- gather(all_likert, key = "Question", value = "Response", -ResponseId)
+```
 
 ## Analysis
 
