@@ -354,6 +354,17 @@ AAA_112_no_hd &lt;- AAA_112[-c(1,2), ]
 all_surveys &lt;- rbind(AAA_111_no_hd,AAA_112_no_hd)
 all_likert &lt;- all_surveys[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)]
 all_likert &lt;- gather(all_likert, key = &quot;Question&quot;, value = &quot;Response&quot;, -ResponseId)</code></pre>
+<pre class="r"><code>str(all_likert)</code></pre>
+<pre><code>## Classes &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;:    270 obs. of  3 variables:
+##  $ ResponseId: chr  &quot;R_97kH4zXkLAbN6yh&quot; &quot;R_6rAfN47miobYqL2&quot; &quot;R_jrp4Dd3joK3vr4q&quot; &quot;R_DHG4C89nPPMYc3L&quot; ...
+##  $ Question  : chr  &quot;1 - Course Design_1&quot; &quot;1 - Course Design_1&quot; &quot;1 - Course Design_1&quot; &quot;1 - Course Design_1&quot; ...
+##  $ Response  : chr  &quot;Strongly agree&quot; &quot;Strongly agree&quot; &quot;Agree&quot; &quot;Strongly agree&quot; ...</code></pre>
+<pre class="r"><code>head(all_likert, n=20)</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["ResponseId"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Question"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Response"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"R_97kH4zXkLAbN6yh","2":"1 - Course Design_1","3":"Strongly agree"},{"1":"R_6rAfN47miobYqL2","2":"1 - Course Design_1","3":"Strongly agree"},{"1":"R_jrp4Dd3joK3vr4q","2":"1 - Course Design_1","3":"Agree"},{"1":"R_DHG4C89nPPMYc3L","2":"1 - Course Design_1","3":"Strongly agree"},{"1":"R_2He4Ra3vLwN4DnJ","2":"1 - Course Design_1","3":"Agree"},{"1":"R_KBvuv8vzXT6JX26","2":"1 - Course Design_1","3":"Agree"},{"1":"R_rMuc8zFm8y4if6N","2":"1 - Course Design_1","3":"Strongly agree"},{"1":"R_sjVbsC6jin4y92j","2":"1 - Course Design_1","3":"Strongly agree"},{"1":"R_hn8ZRc4uiY3p2Dh","2":"1 - Course Design_1","3":"Agree"},{"1":"R_464seZGTmiMHFu2","2":"1 - Course Design_1","3":"Strongly agree"},{"1":"R_97kH4zXkLAbN6yh","2":"1 - Course Design_2","3":"Strongly agree"},{"1":"R_6rAfN47miobYqL2","2":"1 - Course Design_2","3":"Strongly agree"},{"1":"R_jrp4Dd3joK3vr4q","2":"1 - Course Design_2","3":"Neither Agree nor Disagree"},{"1":"R_DHG4C89nPPMYc3L","2":"1 - Course Design_2","3":"Agree"},{"1":"R_2He4Ra3vLwN4DnJ","2":"1 - Course Design_2","3":"Agree"},{"1":"R_KBvuv8vzXT6JX26","2":"1 - Course Design_2","3":"Strongly agree"},{"1":"R_rMuc8zFm8y4if6N","2":"1 - Course Design_2","3":"Strongly agree"},{"1":"R_sjVbsC6jin4y92j","2":"1 - Course Design_2","3":"Strongly agree"},{"1":"R_hn8ZRc4uiY3p2Dh","2":"1 - Course Design_2","3":"Agree"},{"1":"R_464seZGTmiMHFu2","2":"1 - Course Design_2","3":"Strongly agree"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 <div id="analysis" class="section level2">
 <h2>Analysis</h2>
