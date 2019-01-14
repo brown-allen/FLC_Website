@@ -36,6 +36,10 @@ all_surveys <- rbind(AAA_111_no_hd,AAA_112_no_hd)
 all_likert <- all_surveys[ , -c(1:8, 10:17, 22, 29:38, 47, 49, 51, 53, 55, 57, 59, 61, 64:86)]
 all_likert <- gather(all_likert, key = "Question", value = "Response", -ResponseId)
 ```
+```{r}
+str(all_likert)
+head(all_likert, n=20)
+```
 
 ## Analysis
 
