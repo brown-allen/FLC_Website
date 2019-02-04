@@ -48,7 +48,9 @@ Pulling data directly from Qualtrics (qualtRics package from rOpenSci) into proj
 Packages: usethis(); qualtRics(); gutenbergr()
 
 # Session 6
-The Chronicle of Higher Education just released a special report, [The Digital Campus: Big Data](https://www.chronicle.com/specialreport/The-Digital-Campus-Big-Data/105?cid=wcontentgrid_hp_1b). One of the articles touches on some interesting thoughtsaround data analytics and its relevance to the classroom, [Can Data Make You a Better Teacher?](https://www.chronicle.com/article/Can-Data-Make-You-a-Better/245597?cid=wsinglestory_hp_1a). Moreover, it references a number of projects supported by Indiana University's [Center for Learning Analytics and Student Success](https://class.indiana.edu/), which is hosting its 2nd Annual [Learning Analytics Summit](https://lasummit.indiana.edu/) this April.
+The Chronicle of Higher Education just released a special report, [The Digital Campus: Big Data](https://www.chronicle.com/specialreport/The-Digital-Campus-Big-Data/105?cid=wcontentgrid_hp_1b). 
+
+One of the articles touches on some interesting thoughtsaround data analytics and its relevance to the classroom, [Can Data Make You a Better Teacher?](https://www.chronicle.com/article/Can-Data-Make-You-a-Better/245597?cid=wsinglestory_hp_1a). Moreover, it references a number of projects supported by Indiana University's [Center for Learning Analytics and Student Success](https://class.indiana.edu/), which is hosting its 2nd Annual [Learning Analytics Summit](https://lasummit.indiana.edu/) this April.
 
 # Session 7
 
