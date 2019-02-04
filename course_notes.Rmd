@@ -48,7 +48,7 @@ Pulling data directly from Qualtrics (qualtRics package from rOpenSci) into proj
 Packages: usethis(); qualtRics(); gutenbergr()
 
 # Session 6
-The Chronicle of Higher Educaiton just released a special report, [The Digital Campus: Big Data] (https://www.chronicle.com/specialreport/The-Digital-Campus-Big-Data/105?cid=wcontentgrid_hp_1b)
+The Chronicle of Higher Educaiton just released a special report, [https://www.chronicle.com/specialreport/The-Digital-Campus-Big-Data/105?cid=wcontentgrid_hp_1b] (The Digital Campus: Big Data)
 
 # Session 7
 
