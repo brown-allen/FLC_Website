@@ -41,9 +41,14 @@ I then worked to write simplistic code to accomplish this task, which looked som
 > all_likert <- gather(all_likert, key = "Question", value = "Response", -ResponseId)
 
 I then worked to identify strategies to streamline this process. For the next session, I am hoping to make progress on writing 1 or more functions to expedite the data import process. Additionally, I am hoping to begin some preliminary visualization work.
+
 # Session 5
+Pulling data directly from Qualtrics (qualtRics package from rOpenSci) into project. Store private tokens in .Rprofile [usethis()]
+
+Packages: usethis(); qualtRics(); gutenbergr()
 
 # Session 6
+The Chronicle of Higher Educaiton just released a special report, [The Digital Campus: Big Data] (https://www.chronicle.com/specialreport/The-Digital-Campus-Big-Data/105?cid=wcontentgrid_hp_1b)
 
 # Session 7
 
