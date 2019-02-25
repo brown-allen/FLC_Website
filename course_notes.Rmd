@@ -95,6 +95,9 @@ Using  function to grab text from project Guttenberg
 How much background text is required for author analysis
   possibly section grouping level
 ```
+##Thoughts/Notes
+Collecting data & looking for relationships...then developing a hypothesis out of this exploration to collect new data and test for generalizability.
+
 
 ##Analysis: an inference example
 ```{r}
@@ -109,6 +112,9 @@ library(analyzr)
 ```{r}
 glimpse(sbc)
 ```
+```{r}
+head(sbc)
+```
 
 To find out more about the data we can look at the data dictionary provided in the analyzr package with ?sbc.
 
@@ -116,9 +122,81 @@ To find out more about the data we can look at the data dictionary provided in t
 sbc <- sbc %>% select(id, name, gender, age, years_edu, utterance_clean)
 sbc <- sbc[complete.cases(sbc), ]
 ```
+complete.cases identifies missing data cases (TRUE/FALSE). Subsets and only sends over complete cases. Other ways one might go about doing this. Publication might want to know what percent of data includes complete cases. 
 
-##Exploratory Work
-Collecting data & looking for relationships...then developing a hypothesis out of this exploration to collect new data and test for generalizability.
+Tidy technique: use Filter(complete cases
+###Extract dependent variable
+```{r}
+sbc <- 
+  sbc %>% 
+  mutate(um = str_count(utterance_clean, "\\b(um|u=m)\\b")) %>% 
+  mutate(uh = str_count(utterance_clean, "\\b(uh|u=h)\\b"))
+
+sbc 
+```
+"\\b(um|u=m)\\b" -> \\b indicates word boundary
+
+```{r}
+  sbc_2 <- gather(sbc, filler_type, filler_count, um:uh)
+
+sbc_2
+```
+*Question* Why did I encounter an error here. When piping gather into sbc, funcitons below did not work as expected. Instead, I gathered into a new dataframe (sbc_2), then updated subsequent code chunks to account for this. 
+
+###Analysis
+
+####Gender
+```{r}
+library(gridExtra)
+```
+
+```{r}
+p1g <- 
+  sbc_2 %>% 
+  ggplot(aes(x = gender, y = filler_count, group = 1)) + 
+  geom_smooth(method = "lm") + 
+  labs(x = "Gender", y = "Filler count")
+
+p2g <- 
+  sbc_2 %>% 
+  ggplot(aes(x = gender, y = filler_count, group = filler_type, color = filler_type)) +
+  geom_smooth(method = "lm") + 
+  labs(x = "Gender", y = "Filler count", color = "Filler type")
+
+gridExtra::grid.arrange(p1, p2, ncol = 2)
+```
+
+
+```{r}
+summary(glm(filler_count ~ gender, data = sbc_2, family = "poisson"))
+```
+
+```{r}
+summary(glm(filler_count ~ gender * filler_type, data = sbc_2, family = "poisson"))
+```
+gendermale is using female as reference level
+
+####Socioeconomic class
+Using Education status as a proxy for socioeconomic class
+```{r}
+p1ses <- 
+  sbc_2 %>% 
+  ggplot(aes(x = years_edu, y = filler_count, group = 1)) + 
+  geom_smooth(method = "glm") + 
+  labs(x = "Years of education", y = "Filler count") 
+
+# B
+p2ses <- 
+  sbc_2 %>% 
+  ggplot(aes(x = years_edu, y = filler_count, color = filler_type, group = filler_type)) + 
+  geom_smooth(method = "glm") +
+  labs(x = "Years of education", y = "Filler count", color = "Filler type") 
+
+gridExtra::grid.arrange(p1ses, p2ses, ncol = 2)
+```
+```{r}
+summary(glm(filler_count ~ years_edu, data = sbc_2, family = "poisson"))
+```
 
 
 
