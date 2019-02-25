@@ -59,7 +59,7 @@ More efficient ways to grab likert-type items from survey:
 # Session 7
 
 ```{r echo=FALSE}
-"Updates
+##"Updates
 ##JS
 Part of speech tag with TreeTagger
 Korpus package:  (documentation for korpus assumes you are working with one text)
@@ -92,8 +92,8 @@ Multilevel model analysis (questions here); also add timelag analyses
 #CJ
 Hypothesis: Did Caxton, while printing Mallory's text, heavily rewrite a section (is there enough text for authorship analysis; not much of mallory)
 Using  function to grab text from project Guttenberg
-How much background text is required for author analysis
-  possibly section grouping level
+##How much background text is required for author analysis
+  possibly section grouping level"
 ```
 ##Thoughts/Notes
 Collecting data & looking for relationships...then developing a hypothesis out of this exploration to collect new data and test for generalizability.
