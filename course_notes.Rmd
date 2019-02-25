@@ -58,43 +58,6 @@ More efficient ways to grab likert-type items from survey:
 
 # Session 7
 
-```{r echo=FALSE}
-##"Updates
-##JS
-Part of speech tag with TreeTagger
-Korpus package:  (documentation for korpus assumes you are working with one text)
-GitHub page - can I create something that allows students to get started on some research without needing to develop full skills in R
-Lexical cohesion - > identifying 
-
-##DJ
-Findings on webstie
-take ~9000 TA comments to code automatically
-accurate on 1-axis with naive bayes on Word Frequencies but not other axis (not yet incorporating n-grams)
-
-##MM
-On top of qualitative reflecitons, weekly quizzes (retireval practice)
-Does one or both of these have any type of relationship with exam score?
-Some different types of models in R to identify possible relationships
- - previously identified positive relationship between reflective exercises and exam scores; interestingly this disappeared with the addition of exam scores
- - Goal: Fall; some SOTL, A/B test with 2 sections; quizzes vs reflective activities
-Project #2
-  Science of the Supernatural
-  Per/post assessment in creative thinking; belief in the paranomral & correlation with temporal lobe activity
-  Qualtrics & R
-
-#EM
-Students motivation to do well in class; 
-Every other week re-measure; factors influencing motivation
-3 timepoints (survey collection in Qualtrics)
-Data cleaning & wrangling; change strings
-Multilevel model analysis (questions here); also add timelag analyses
-
-#CJ
-Hypothesis: Did Caxton, while printing Mallory's text, heavily rewrite a section (is there enough text for authorship analysis; not much of mallory)
-Using  function to grab text from project Guttenberg
-##How much background text is required for author analysis
-  possibly section grouping level"
-```
 ##Thoughts/Notes
 Collecting data & looking for relationships...then developing a hypothesis out of this exploration to collect new data and test for generalizability.
 
