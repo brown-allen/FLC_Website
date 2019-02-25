@@ -51,9 +51,9 @@ One of the articles touches on some interesting thoughtsaround data analytics an
 
 More efficient ways to grab likert-type items from survey:
 ```{r}
-demo_likert <- demo_survey %>%
-  select_if(is.integer) %>%
-  glimpse
+##demo_likert <- demo_survey %>%
+  ##select_if(is.integer) %>%
+  ##glimpse
 ```
 
 # Session 7
@@ -137,9 +137,9 @@ sbc
 "\\b(um|u=m)\\b" -> \\b indicates word boundary
 
 ```{r}
-  sbc_2 <- gather(sbc, filler_type, filler_count, um:uh)
+  sbc <- gather(sbc, filler_type, filler_count, um:uh)
 
-sbc_2
+sbc
 ```
 *Question* Why did I encounter an error here. When piping gather into sbc, funcitons below did not work as expected. Instead, I gathered into a new dataframe (sbc_2), then updated subsequent code chunks to account for this. 
 
@@ -152,13 +152,13 @@ library(gridExtra)
 
 ```{r}
 p1g <- 
-  sbc_2 %>% 
+  sbc %>% 
   ggplot(aes(x = gender, y = filler_count, group = 1)) + 
   geom_smooth(method = "lm") + 
   labs(x = "Gender", y = "Filler count")
 
 p2g <- 
-  sbc_2 %>% 
+  sbc %>% 
   ggplot(aes(x = gender, y = filler_count, group = filler_type, color = filler_type)) +
   geom_smooth(method = "lm") + 
   labs(x = "Gender", y = "Filler count", color = "Filler type")
