@@ -3,7 +3,7 @@ output_dir: "docs"
 navbar:
   title: "FLC - Data Analysis (AB)"
   right:
-    text: "Course Notes"
+  - text: "Course Notes"
     icon: fa-book
     href: course_notes.html
   - text: "Pre-Work"
