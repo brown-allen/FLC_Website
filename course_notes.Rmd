@@ -166,4 +166,7 @@ summary(glm(filler_count ~ years_edu, data = sbc_2, family = "poisson"))
 
 # Session 8
 
+##Pre-work
+
+Rendering [.Rmd file](https://brown-allen.github.io/LTC-Duke/WFU_update) using Tufte package
 # References
