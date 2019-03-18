@@ -168,5 +168,12 @@ summary(glm(filler_count ~ years_edu, data = sbc_2, family = "poisson"))
 
 ##Pre-work
 
-Rendering [.Rmd file](https://brown-allen.github.io/LTC-Duke/WFU_update) using Tufte package
+I will be attending the [Learning Technology Consortium](http://ltconsortium.org) meeting at Duke this week. As part of this meeting (the group meets twice a year, rotating hosting duties among 10 institutions), representatives from each school provide updates on current work in learning technologies at their institution. WFU's update has taken two forms:
+
+1. [LTC Update Podcast](https://prod.wp.cdn.aws.wfu.edu/sites/232/2019/03/LTC_update_pod.mp3): Provides an overview of a few things of note.
+2. [Written update](https://brown-allen.github.io/LTC-Duke/WFU_update)
+
+While the report itself does not involve any data, I wanted to practice writing the update using the [Tufte package in R](https://rstudio.github.io/tufte/), since this is one route I might go to represent recurring survey feedback reports for OLEC. The package allows for publishing .Rmd files as PDF or HTML files using the style of Edward Tufte's written texts. Some central features of this style include: marginal notes and figures, in-line images & figures, and specific heading & font styles. I've been mostly successful in publishing it, but I believe I may be doing something wrong with my yaml file or the structure of my folder, since certain behaviors end up breaking my site in unexpected ways. 
+
+
 # References

@@ -490,53 +490,12 @@ div.tocify {
 <div id="analysis-an-inference-example" class="section level2">
 <h2>Analysis: an inference example</h2>
 <pre class="r"><code>devtools::install_github(&quot;WFU-TLC/analyzr&quot;)</code></pre>
-<pre><code>## Downloading GitHub repo WFU-TLC/analyzr@master</code></pre>
-<pre><code>##   
-   checking for file ‘/private/var/folders/k6/4x60rpgn7wz9jv8p_n3hw42r0000gn/T/RtmpXqo7tP/remotesfc75704d259d/WFU-TLC-analyzr-47c89d7/DESCRIPTION’ ...
-  
-✔  checking for file ‘/private/var/folders/k6/4x60rpgn7wz9jv8p_n3hw42r0000gn/T/RtmpXqo7tP/remotesfc75704d259d/WFU-TLC-analyzr-47c89d7/DESCRIPTION’
-## 
-  
-─  preparing ‘analyzr’: (848ms)
-## 
-  
-✔  checking DESCRIPTION meta-information
-## 
-  
-─  checking for LF line-endings in source and make files and shell scripts
-## 
-  
-─  checking for empty or unneeded directories
-## ─  looking to see if a ‘data/datalist’ file should be added
-## 
-  
-─  building ‘analyzr_0.1.0.tar.gz’ (12.3s)
-## 
-  
-   
-## </code></pre>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
-<pre><code>## ✔ ggplot2 3.1.0       ✔ purrr   0.3.0  
-## ✔ tibble  2.0.1       ✔ dplyr   0.8.0.1
-## ✔ tidyr   0.8.2       ✔ stringr 1.4.0  
-## ✔ readr   1.3.1       ✔ forcats 0.4.0</code></pre>
-<pre><code>## Warning: package &#39;tibble&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package &#39;purrr&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package &#39;stringr&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package &#39;forcats&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(analyzr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;analyzr&#39;</code></pre>
-<pre><code>## The following object is masked _by_ &#39;.GlobalEnv&#39;:
-## 
-##     sbc</code></pre>
+<pre><code>## Skipping install of &#39;analyzr&#39; from a github remote, the SHA1 (47c89d7a) has not changed since last install.
+##   Use `force = TRUE` to force installation</code></pre>
+<pre class="r"><code>library(tidyverse)
+library(analyzr)</code></pre>
 <pre class="r"><code>glimpse(sbc)</code></pre>
-<pre><code>## Observations: 90,648
+<pre><code>## Observations: 181,296
 ## Variables: 8
 ## $ id              &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
 ## $ name            &lt;chr&gt; &quot;lenore&quot;, &quot;lenore&quot;, &quot;lenore&quot;, &quot;lenore&quot;, &quot;lenore&quot;…
@@ -583,11 +542,6 @@ sbc</code></pre>
 <div id="gender" class="section level4">
 <h4>Gender</h4>
 <pre class="r"><code>library(gridExtra)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;gridExtra&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
-## 
-##     combine</code></pre>
 <pre class="r"><code>p1g &lt;- 
   sbc %&gt;% 
   ggplot(aes(x = gender, y = filler_count, group = 1)) + 
